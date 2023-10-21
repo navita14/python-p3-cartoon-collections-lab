@@ -35,11 +35,11 @@ class TestCartoonCollections:
 
     def test_long_planeteer_calls_returns_true(self):
         '''returns true if any calls are longer than 4 characters'''
-        assert(long_planeteer_calls(["axe", "earth", "wind", "fire"]) == True)
+        assert(long_planeteer_calls(["axe", "earth", "wind", "fire", "code"]) == True)
 
     def test_long_planeteer_calls_returns_false(self):
         '''returns false if all calls are 4 characters or less'''
-        assert(long_planeteer_calls(["wind", "fire", "tree", "axe", "code"]) == False)
+        assert(long_planeteer_calls(["wind", "fire", "tree", "axe"]) == False)
 
     def test_find_the_cheese_with_cheese(self):
         '''returns the first element of the array that is cheese'''
